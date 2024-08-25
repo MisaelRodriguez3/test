@@ -1,0 +1,26 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": [
+            "."
+        ],
+        "exclude": [
+            "node_modules"
+        ],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "opts": {
+        "destination": "./docs",
+        "recurse": true,
+        "template": "node_modules/docdash"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "template": "node_modules/docdash"
+    },
+    "plugins": []
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugerencia de Oferta</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f0f0f0;
+      }
+
+      .card {
+        background-color: black;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        overflow: hidden;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .header img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .content {
+        margin-bottom: 0;
+        background-color: #fea621;
+        text-align: center;
+      }
+
+      .content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .contenttwo {
+        margin-top: 0;
+        background-color: #fea621;
+        color: #000;
+        padding: 20px;
+        min-height: 200px;
+        text-align: center;
+      }
+
+      .descuento {
+        text-align: center;
+        color: black;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 670px) {
+        .descuento {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .descuento {
+          font-size: 3rem;
+        }
+
+        .btn {
+          padding: 1.5rem 3rem;
+          font-size: 1.8rem;
+        }
+
+        .inner-box2 {
+          padding: 2.5rem;
+        }
+      }
+
+      .descripcion {
+        margin-bottom: 0;
+        background-color: #fea621;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+      }
+
+      .descripcion img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .producto {
+        font-size: 1.5rem;
+        margin-top: 5px;
+        text-align: center;
+        color: #ffffff;
+        word-wrap: break-word;
+        padding: 0;
+      }
+
+      .imgproducto-wrapper {
+        position: relative;
+        display: inline-block;
+        margin: 20px auto;
+        max-width: 100%;
+      }
+
+      .imgproducto {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-left: 0.3vw solid #942300;
+        border-right: 0.3vw solid #942300;
+        border-bottom: 0.3vw solid #942300;
+        border-top: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .imgproducto-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #942300;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+        font-size: 1.5rem;
+      }
+
+      .btn {
+        display: block;
+        margin: 20px auto;
+        background-color: #01212e;
+        color: white;
+        border: none;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s ease;
+        text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.8);
+      }
+
+      @media screen and (max-width: 670px) {
+        .btn {
+          padding: 1rem 2rem;
+          font-size: 1.5rem;
+        }
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .inner-box2 {
+        background-color: #fea621;
+        padding: 2rem;
+        color: black;
+        text-align: center;
+        border-radius: 8px;
+      }
+
+      .social-icons {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+
+      .social-icons i {
+        font-size: 1rem;
+        margin: 0 1rem;
+        color: #fea621;
+      }
+
+      .social-icons p {
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+
+      .footer {
+        text-align: center;
+        color: #ffffff;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .descuento {
+          color: black !important;
+        }
+
+        .contenttwo {
+          background-color: #fea621 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <img src="cid:header" alt="Imagen de Encabezado" />
+      </div>
+      <div class="content">
+        <img src="cid:tt" alt="Title" />
+      </div>
+      <div class="contenttwo">
+        <h2 class="descuento">{{oferta}}</h2>
+        <p class="descripcion">{{descripcion}}</p>
+        {{producto}}
+        <button class="btn">¡DISFRÚTALO AHORA!</button>
+        <div class="inner-box2">
+          <p>Vigencia de {{fecha_inicio}} hasta {{fecha_fin}}</p>
+          <p>Gastos de envío no incluidos</p>
+        </div>
+      </div>
+      <br />
+      <div class="footer">
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="cid:fb" alt="Facebook" style="height: 60px" />
+          </a>
+          <a href="https://www.x.com" target="_blank">
+            <img src="cid:x" alt="X" style="height: 60px" />
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="cid:yt" alt="YouTube" style="height: 60px" />
+          </a>
+          <br /><br />
+          <p>VALORE TEAM</p>
+          <p>ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

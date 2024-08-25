@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>mail/send_mail.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Controllers.html">Controllers</a></li><li><a href="module-Controllers.module_afiliados.html">afiliados</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_afiliados.html#.createOneAfiliado">createOneAfiliado</a></li><li data-type='method'><a href="module-Controllers.module_afiliados.html#.deleteAfiliados">deleteAfiliados</a></li><li data-type='method'><a href="module-Controllers.module_afiliados.html#.showAfiliadoById">showAfiliadoById</a></li><li data-type='method'><a href="module-Controllers.module_afiliados.html#.showAllAfiliados">showAllAfiliados</a></li><li data-type='method'><a href="module-Controllers.module_afiliados.html#.updateOneAfiliado">updateOneAfiliado</a></li></ul></li><li><a href="module-Controllers.module_categoria_promocion.html">categoria_promocion</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_categoria_promocion.html#.addCP">addCP</a></li><li data-type='method'><a href="module-Controllers.module_categoria_promocion.html#.delCP">delCP</a></li><li data-type='method'><a href="module-Controllers.module_categoria_promocion.html#.getCP">getCP</a></li><li data-type='method'><a href="module-Controllers.module_categoria_promocion.html#.getCPs">getCPs</a></li><li data-type='method'><a href="module-Controllers.module_categoria_promocion.html#.upCP">upCP</a></li></ul></li><li><a href="module-Controllers.module_categorias.html">categorias</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_categorias.html#.addCategory">addCategory</a></li><li data-type='method'><a href="module-Controllers.module_categorias.html#.delCategory">delCategory</a></li><li data-type='method'><a href="module-Controllers.module_categorias.html#.getCategories">getCategories</a></li><li data-type='method'><a href="module-Controllers.module_categorias.html#.getCategory">getCategory</a></li><li data-type='method'><a href="module-Controllers.module_categorias.html#.upCategory">upCategory</a></li></ul></li><li><a href="module-Controllers.module_detallesVenta.html">detallesVenta</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_detallesVenta.html#.createOneDetallesVenta">createOneDetallesVenta</a></li><li data-type='method'><a href="module-Controllers.module_detallesVenta.html#.deleteOneDetallesVenta">deleteOneDetallesVenta</a></li><li data-type='method'><a href="module-Controllers.module_detallesVenta.html#.showAllDetallesVenta">showAllDetallesVenta</a></li><li data-type='method'><a href="module-Controllers.module_detallesVenta.html#.showDetallesVentaById">showDetallesVentaById</a></li><li data-type='method'><a href="module-Controllers.module_detallesVenta.html#.updateOneDetallesVenta">updateOneDetallesVenta</a></li></ul></li><li><a href="module-Controllers.module_producto_promocion.html">producto_promocion</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_producto_promocion.html#.addPP">addPP</a></li><li data-type='method'><a href="module-Controllers.module_producto_promocion.html#.delPP">delPP</a></li><li data-type='method'><a href="module-Controllers.module_producto_promocion.html#.getPP">getPP</a></li><li data-type='method'><a href="module-Controllers.module_producto_promocion.html#.getPPs">getPPs</a></li><li data-type='method'><a href="module-Controllers.module_producto_promocion.html#.upPP">upPP</a></li></ul></li><li><a href="module-Controllers.module_productos.html">productos</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_productos.html#.addProduct">addProduct</a></li><li data-type='method'><a href="module-Controllers.module_productos.html#.delProduct">delProduct</a></li><li data-type='method'><a href="module-Controllers.module_productos.html#.getProduct">getProduct</a></li><li data-type='method'><a href="module-Controllers.module_productos.html#.getProducts">getProducts</a></li><li data-type='method'><a href="module-Controllers.module_productos.html#.upProduct">upProduct</a></li></ul></li><li><a href="module-Controllers.module_promociones.html">promociones</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_promociones.html#.addPromotion">addPromotion</a></li><li data-type='method'><a href="module-Controllers.module_promociones.html#.delPromotion">delPromotion</a></li><li data-type='method'><a href="module-Controllers.module_promociones.html#.getPromotion">getPromotion</a></li><li data-type='method'><a href="module-Controllers.module_promociones.html#.getPromotions">getPromotions</a></li><li data-type='method'><a href="module-Controllers.module_promociones.html#.upPromotion">upPromotion</a></li></ul></li><li><a href="module-Controllers.module_usuariosw.html">usuariosw</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_usuariosw.html#.createOneUsuario">createOneUsuario</a></li><li data-type='method'><a href="module-Controllers.module_usuariosw.html#.deleteUsuarios">deleteUsuarios</a></li><li data-type='method'><a href="module-Controllers.module_usuariosw.html#.showAllUsuarios">showAllUsuarios</a></li><li data-type='method'><a href="module-Controllers.module_usuariosw.html#.showUsuarioById">showUsuarioById</a></li><li data-type='method'><a href="module-Controllers.module_usuariosw.html#.updateOneUsuario">updateOneUsuario</a></li></ul></li><li><a href="module-Controllers.module_ventas.html">ventas</a><ul class='methods'><li data-type='method'><a href="module-Controllers.module_ventas.html#.createOneVenta">createOneVenta</a></li><li data-type='method'><a href="module-Controllers.module_ventas.html#.deleteOneVenta">deleteOneVenta</a></li><li data-type='method'><a href="module-Controllers.module_ventas.html#.showAllVentas">showAllVentas</a></li><li data-type='method'><a href="module-Controllers.module_ventas.html#.showVentaById">showVentaById</a></li><li data-type='method'><a href="module-Controllers.module_ventas.html#.updateOneVenta">updateOneVenta</a></li></ul></li><li><a href="module-Middleware.html">Middleware</a><ul class='methods'><li data-type='method'><a href="module-Middleware.html#.validateSchema">validateSchema</a></li><li data-type='method'><a href="module-Middleware.html#.verifyToken">verifyToken</a></li><li data-type='method'><a href="module-Middleware.html#~rolesValidator">rolesValidator</a></li></ul></li><li><a href="module-Models.html">Models</a></li><li><a href="module-Schemas.html">Schemas</a></li><li><a href="module-Services.html">Services</a></li><li></li><li></li><li></li><li></li><li><a href="module-Services.module_afiliados.html">afiliados</a><ul class='methods'><li data-type='method'><a href="module-Services.module_afiliados.html#.createAfiliado">createAfiliado</a></li><li data-type='method'><a href="module-Services.module_afiliados.html#.deleteAfiliado">deleteAfiliado</a></li><li data-type='method'><a href="module-Services.module_afiliados.html#.getAfiliadoById">getAfiliadoById</a></li><li data-type='method'><a href="module-Services.module_afiliados.html#.getAllAfiliados">getAllAfiliados</a></li><li data-type='method'><a href="module-Services.module_afiliados.html#.updateAfiliado">updateAfiliado</a></li></ul></li><li><a href="module-Services.module_categoria_promocion.html">categoria_promocion</a><ul class='methods'><li data-type='method'><a href="module-Services.module_categoria_promocion.html#.createCP">createCP</a></li><li data-type='method'><a href="module-Services.module_categoria_promocion.html#.deleteCP">deleteCP</a></li><li data-type='method'><a href="module-Services.module_categoria_promocion.html#.getAllCP">getAllCP</a></li><li data-type='method'><a href="module-Services.module_categoria_promocion.html#.getOneCP">getOneCP</a></li><li data-type='method'><a href="module-Services.module_categoria_promocion.html#.updateCP">updateCP</a></li></ul></li><li><a href="module-Services.module_categorias.html">categorias</a><ul class='methods'><li data-type='method'><a href="module-Services.module_categorias.html#.createCategory">createCategory</a></li><li data-type='method'><a href="module-Services.module_categorias.html#.deleteCategory">deleteCategory</a></li><li data-type='method'><a href="module-Services.module_categorias.html#.getAllCategories">getAllCategories</a></li><li data-type='method'><a href="module-Services.module_categorias.html#.getOneCategory">getOneCategory</a></li><li data-type='method'><a href="module-Services.module_categorias.html#.updateCategory">updateCategory</a></li></ul></li><li><a href="module-Services.module_detallesVenta.html">detallesVenta</a><ul class='methods'><li data-type='method'><a href="module-Services.module_detallesVenta.html#.createDetallesVenta">createDetallesVenta</a></li><li data-type='method'><a href="module-Services.module_detallesVenta.html#.deleteDetallesVenta">deleteDetallesVenta</a></li><li data-type='method'><a href="module-Services.module_detallesVenta.html#.getAllDetallesVenta">getAllDetallesVenta</a></li><li data-type='method'><a href="module-Services.module_detallesVenta.html#.getDetallesVentaById">getDetallesVentaById</a></li><li data-type='method'><a href="module-Services.module_detallesVenta.html#.updateDetallesVenta">updateDetallesVenta</a></li></ul></li><li><a href="module-Services.module_producto_promocion.html">producto_promocion</a><ul class='methods'><li data-type='method'><a href="module-Services.module_producto_promocion.html#.createPP">createPP</a></li><li data-type='method'><a href="module-Services.module_producto_promocion.html#.deletePP">deletePP</a></li><li data-type='method'><a href="module-Services.module_producto_promocion.html#.getAllPP">getAllPP</a></li><li data-type='method'><a href="module-Services.module_producto_promocion.html#.getOnePP">getOnePP</a></li><li data-type='method'><a href="module-Services.module_producto_promocion.html#.updatePP">updatePP</a></li></ul></li><li><a href="module-Services.module_productos.html">productos</a><ul class='methods'><li data-type='method'><a href="module-Services.module_productos.html#.createProduct">createProduct</a></li><li data-type='method'><a href="module-Services.module_productos.html#.deleteProduct">deleteProduct</a></li><li data-type='method'><a href="module-Services.module_productos.html#.getAllProducts">getAllProducts</a></li><li data-type='method'><a href="module-Services.module_productos.html#.getOneProduct">getOneProduct</a></li><li data-type='method'><a href="module-Services.module_productos.html#.updateProduct">updateProduct</a></li></ul></li><li><a href="module-Services.module_promociones.html">promociones</a><ul class='methods'><li data-type='method'><a href="module-Services.module_promociones.html#.createPromotion">createPromotion</a></li><li data-type='method'><a href="module-Services.module_promociones.html#.deletePromotion">deletePromotion</a></li><li data-type='method'><a href="module-Services.module_promociones.html#.getAllPromotions">getAllPromotions</a></li><li data-type='method'><a href="module-Services.module_promociones.html#.getOnePromotion">getOnePromotion</a></li><li data-type='method'><a href="module-Services.module_promociones.html#.updatePromotion">updatePromotion</a></li></ul></li><li><a href="module-Services.module_usuarios.html">usuarios</a><ul class='methods'><li data-type='method'><a href="module-Services.module_usuarios.html#.deleteUsuario">deleteUsuario</a></li><li data-type='method'><a href="module-Services.module_usuarios.html#.getAllUsuarios">getAllUsuarios</a></li><li data-type='method'><a href="module-Services.module_usuarios.html#.getUsuarioById">getUsuarioById</a></li><li data-type='method'><a href="module-Services.module_usuarios.html#.updateUsuario">updateUsuario</a></li></ul></li><li><a href="module-Services.module_ventas.html">ventas</a><ul class='methods'><li data-type='method'><a href="module-Services.module_ventas.html#.createVenta">createVenta</a></li><li data-type='method'><a href="module-Services.module_ventas.html#.deleteVenta">deleteVenta</a></li><li data-type='method'><a href="module-Services.module_ventas.html#.getAllVentas">getAllVentas</a></li><li data-type='method'><a href="module-Services.module_ventas.html#.getVentaById">getVentaById</a></li><li data-type='method'><a href="module-Services.module_ventas.html#.updateVenta">updateVenta</a></li></ul></li><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.loadTemplate">loadTemplate</a></li><li data-type='method'><a href="module-utils.html#.removeImage">removeImage</a></li><li data-type='method'><a href="module-utils.html#~recipents">recipents</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#Instancia">Instancia</a></li><li><a href="global.html#createAccesToken">createAccesToken</a></li><li><a href="global.html#getObjectsData">getObjectsData</a></li><li><a href="global.html#getPromoData">getPromoData</a></li><li><a href="global.html#options">options</a></li><li><a href="global.html#sendMail">sendMail</a></li><li><a href="global.html#transporter">transporter</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">mail/send_mail.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import nodemailer from "nodemailer"
+import { configDotenv } from "dotenv";
+import loadTemplate from "../utils/templeateLoader.js";
+import recipents from "../utils/recipientFetcher.js";
+import { getOnePromotion } from "../services/promociones.service.js";
+import { getAllProducts, getOneProduct } from "../services/productos.service.js";
+import { getOneCategory } from "../services/categorias.service.js";
+
+configDotenv();
+
+/**
+ * Configura un transporter de Nodemailer para enviar correos electrónicos a través de Gmail.
+ * La autenticación se realiza utilizando las credenciales almacenadas en las variables de entorno.
+ */
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    secure: true,
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD
+    },
+
+});
+
+/**
+ * Controlador para enviar correos electrónicos promocionales a una lista de destinatarios.
+ * @async
+ * @function
+ * @param {Object} req - El objeto de solicitud de Express.
+ * @param {Object} res - El objeto de respuesta de Express.
+ * @returns {Promise&lt;void>} Responde con un mensaje de éxito o error según el resultado del envío de correo.
+ */
+const sendMail = async (req, res) => {
+    const { promocion_Id, type, ids } = req.body
+
+    const promotion = await getPromoData(promocion_Id)
+    const objects = await getObjectsData({ type, ids })
+    const information = {
+        objects, oferta: promotion.tipo, descripcion: promotion.descripcion,
+        fecha_inicio: promotion.fecha_inicio, fecha_fin: promotion.fecha_fin
+    }
+    const html = loadTemplate("template.html", information)
+    const emails = await recipents();
+
+    const mailOptions = {
+        from: `Tester &lt;${process.env.EMAIL_USER}>`,
+        to: emails/*["www.axelelquincle@gmail.com", "almacenamiento002@gmail.com", "bryanen828@gmail.com", "alvarojzg2@gmail.com"]*/,
+        subject: "prueba",
+        html,
+        attachments: [
+            {
+                filename: "header.png",
+                path: "http://localhost:3000/uploads/fixed/header.png",
+                cid: "header"
+            },
+            {
+                filename: "fb.png",
+                path: "http://localhost:3000/uploads/fixed/fb.png",
+                cid: "fb"
+            },
+            {
+                filename: "x.png",
+                path: "http://localhost:3000/uploads/fixed/x.png",
+                cid: "x"
+            },
+            {
+                filename: "yt.png",
+                path: "http://localhost:3000/uploads/fixed/yt.png",
+                cid: "yt"
+            },
+            {
+                filename: "title.webp",
+                path: "http://localhost:3000/uploads/fixed/title.webp",
+                cid: "tt"
+            }
+        ]
+    }
+
+    try {
+        await transporter.sendMail(mailOptions);
+        console.log('Correo enviado');
+        res.send('Correo enviado exitosamente');
+    } catch (error) {
+        console.error('Error al enviar el correo:', error);
+        res.status(500).send('Error al enviar el correo');
+    }
+}
+
+/**
+ * Obtiene los datos de una promoción en base a su ID.
+ * @async
+ * @function
+ * @param {number} id - El ID de la promoción.
+ * @returns {Promise&lt;Object>} Un objeto que contiene los detalles de la promoción.
+ */
+async function getPromoData(id) {
+    const promo = await getOnePromotion(id);
+
+    let data = { tipo: "", descripcion: "", fecha_inicio: promo.fecha_inicio, fecha_fin: promo.fecha_fin };
+
+    switch (promo.tipo) {
+        case "porcentaje_descuento":
+            data.tipo = `${promo.descuento}%`;
+            data.descripcion = "DE DESCUENTO EN";
+            break;
+
+        case "compra_x_paga_y":
+            data.tipo = `${promo.comprar_cantidad} x ${promo.pagar_cantidad}`;
+            data.descripcion = "EN";
+            break;
+
+        case "por_cada_x_te_descontamos_y":
+            data.tipo = `Por cada $${promo.por_cada} te descontamos $${promo.descuento}`;
+            data.descripcion = "EN";
+            break;
+    }
+    return data;
+}
+
+/**
+ * Obtiene los datos de objetos relacionados (productos o categorías) en base al tipo y una lista de IDs.
+ * @async
+ * @function
+ * @param {Object} object - El objeto que contiene el tipo de entidad y una lista de IDs.
+ * @returns {Promise&lt;Array&lt;Object>>} Una lista de objetos que contienen el nombre y la imagen de los elementos recuperados.
+ */
+async function getObjectsData(object) {
+    let data = [];
+
+    switch (object.type) {
+        case "productos":
+            for (const item of object.ids) {
+                const obj = await getOneProduct(item);
+                data.push({ nombre: obj.nombre, imagen: obj.imagen })
+            }
+            break;
+        case "categorias":
+            const products = await getAllProducts()
+            for (const category of object.ids) {
+                const obj = await getOneCategory(category);
+                const img = products.filter(obj => obj.categoria_Id === category)
+                data.push({ nombre: obj.nombre, imagen: img[0].imagen })
+            }
+            break;
+    }
+
+    return data;
+}
+
+export default sendMail;</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Sat Aug 10 2024 22:11:48 GMT-0600 (GMT-06:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
