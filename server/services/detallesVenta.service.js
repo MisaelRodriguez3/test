@@ -23,7 +23,7 @@ import categories from "../models/categorias.model.js";
  */
 export const createDetallesVenta = async (data) => {
     try {
-        return await saleDetails.create(data);
+        return await saleDetails.bulkCreate(data);
     } catch (error) {
         console.error(error);
         throw new Error('Internal Server Error');
