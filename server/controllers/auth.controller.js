@@ -17,12 +17,14 @@ export const login = async (req, res) => {
         if (!userFound) return res.status(404).json({ message: "bad request" })
         const isMatch = await bcrypt.compare(password, userFound.password)
         if (!isMatch) return res.status(404).json({ message: "bad request" })
-
+            
         const name = userFound.nombre
         const rol = userFound.role.rol
+        const imagen = userFound.imagen
+        const empleado_Id = userFound.empleado_Id
 
-        const token = await createAccesToken({ id: userFound.empleado_Id, rol: userFound.role.rol })
-        return res.header("Authorization", `Bearer ${token}`).json({ token, name, rol })
+        const token = await createAccesToken({ id: empleado_Id, rol: userFound.role.rol })
+        return res.header("Authorization", `Bearer ${token}`).json({ token, name, rol, imagen, empleado_Id })
     } catch (error) {
         console.error(error);
         return res.status(500).json({ error: "there was an internal server error" })

@@ -19,6 +19,7 @@ import v1AffiliatesRoutes from "./v1/routes/afiliados.routes.js";
 import v1UsersRoutes from "./v1/routes/usuarios.routes.js";
 import v1SalesRoutes from "./v1/routes/ventas.routes.js";
 import v1saleDetailsRoutes from "./v1/routes/detallesVenta.routes.js";
+import v1PublicUsersRoutes from "./v1/routes/usuarioPublico.routes.js"
 
 configDotenv();
 const __filename = fileURLToPath(import.meta.url);
@@ -29,7 +30,7 @@ const server = express();
 //
 const v1RoutesList = [
     v1AuthRoutes, v1CategoriesRoutes, v1ProductsRoutes, v1PromtionsRoutes, v1PPRoutes, v1CPRoutes, v1RolesRoutes, v1EmpleadosRoutes,
-    v1AffiliatesRoutes, v1UsersRoutes, v1SalesRoutes, v1saleDetailsRoutes
+    v1AffiliatesRoutes, v1UsersRoutes, v1PublicUsersRoutes, v1SalesRoutes, v1saleDetailsRoutes
 ]
 export const revokedTokens = []
 

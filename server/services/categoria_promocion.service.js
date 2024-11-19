@@ -26,7 +26,7 @@ export const getAllCP = async () => {
             attributes: ["categoriaPromo_Id", "categoria_Id", "promocion_Id"],
             include: [
                 { model: categories, as: "categoriaPromocion", attributes: ["nombre"] },
-                { model: promotions, as: "promocionCategoria", attributes: ["nombre"] }
+                { model: promotions, as: "promocionCategoria", attributes: ["nombre", "tipo"] }
             ],
             order: [["categoriaPromo_Id", "ASC"]]
         });
@@ -74,7 +74,7 @@ export const getCPServices = async (id) => {
  */
 export const createCP = async (data) => {
     try {
-        const newCP = await categoryPromotion.create(data);
+        const newCP = await categoryPromotion.bulkCreate(data);
         return newCP;
     } catch (error) {
         console.error(error);
@@ -89,7 +89,7 @@ export const createCP = async (data) => {
  * @async
  * @param {Number} id Identificador del registro de la tabla `categoria_promocion`
  * @param {Object} data Nueva información del registro.
- * @returns {Promise<Array<Number> | null>} Retorna un array de números con la cantidad de filas afectadas por la ejecución de la operación
+ * @returns {Promise<Array<Number>> | null>} Retorna un array de números con la cantidad de filas afectadas por la ejecución de la operación
  * o null si el registro no existe.
  * @throws {Error} Lanza un error si ocurre un problema durante la consulta a la base de datos.
  */

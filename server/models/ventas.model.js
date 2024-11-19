@@ -2,6 +2,7 @@ import { DataTypes } from 'sequelize';
 import sequelize from '../config/database.js';
 import affiliates from './afiliados.model.js';
 import users from './usuarios.model.js';
+import publicUsers from './usuarioPublico.model.js';
 
 /**
  * Modelo de ventas para la base de datos.
@@ -43,6 +44,10 @@ const sales = sequelize.define("ventas", {
         type: DataTypes.INTEGER,
         allowNull: true
     },
+    usuarioPublico_Id: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
     facturado: {
         type: DataTypes.BOOLEAN,
         allowNull: true
@@ -63,6 +68,9 @@ sales.belongsTo(users, { foreignKey: "usuario_Id" });
 
 affiliates.hasMany(sales, { foreignKey: "afiliado_Id" });
 sales.belongsTo(affiliates, { foreignKey: "afiliado_Id" });
+
+publicUsers.hasMany(sales, { foreignKey: "usuarioPublico_Id" });
+sales.belongsTo(publicUsers, { foreignKey: "usuarioPublico_Id" });
 
 // Sincronización del modelo con la base de datos
 await sales.sync();

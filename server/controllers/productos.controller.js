@@ -111,7 +111,7 @@ export const upProduct = async (req, res) => {
     }
 
     try {
-        const product = await getOneProduct(id)
+        const product = await getProductsByIdsService(id)
         if (!product) {
             return res.status(404).json({ error: `El producto con el id ${id} no existe` })
         }

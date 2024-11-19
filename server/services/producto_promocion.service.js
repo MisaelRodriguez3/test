@@ -22,7 +22,7 @@ export const getAllPP = async () => {
             attributes: ["productoPromo_Id", "promocion_Id", "producto_Id"],
             include: [
                 { model: products, as: "productoPromocion", attributes: ["nombre"] },
-                { model: promotions, as: "promocionProducto", attributes: ["nombre"] }
+                { model: promotions, as: "promocionProducto", attributes: ["nombre", "tipo"] }
             ],
             order: [["productoPromo_Id", "ASC"]]
         });
@@ -73,7 +73,7 @@ export const createPP = async (data) => {
     try {
         console.log("Post creado")
         console.log(data);
-        const newPP = await productPromotion.create(data);
+        const newPP = await productPromotion.bulkCreate(data);
         console.log(newPP);
         return newPP;
     } catch (error) {

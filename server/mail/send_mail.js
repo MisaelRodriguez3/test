@@ -4,6 +4,7 @@ import loadTemplate from "../utils/templeateLoader.js";
 import recipents from "../utils/recipientFetcher.js";
 import { getOnePromotion } from "../services/promociones.service.js";
 import { getAllProducts, getProductsByIdsService } from "../services/productos.service.js";
+import { getOneCategory } from "../services/categorias.service.js";
 
 configDotenv();
 
@@ -49,27 +50,27 @@ const sendMail = async (promocion_Id, type, ids) => {
         attachments: [
             {
                 filename: "header.png",
-                path: `${process.env.BASE_URL}/uploads/fixed/header.png`,
+                path: `${process.env.VITE_BACKEND_URL}/uploads/fixed/header.png`,
                 cid: "header"
             },
             {
                 filename: "fb.png",
-                path: `${process.env.BASE_URL}/uploads/fixed/fb.png`,
+                path: `${process.env.VITE_BACKEND_URL}/uploads/fixed/fb.png`,
                 cid: "fb"
             },
             {
                 filename: "x.png",
-                path: `${process.env.BASE_URL}/uploads/fixed/x.png`,
+                path: `${process.env.VITE_BACKEND_URL}/uploads/fixed/x.png`,
                 cid: "x"
             },
             {
                 filename: "yt.png",
-                path: `${process.env.BASE_URL}/uploads/fixed/yt.png`,
+                path: `${process.env.VITE_BACKEND_URL}/uploads/fixed/yt.png`,
                 cid: "yt"
             },
             {
                 filename: "title.webp",
-                path: `${process.env.BASE_URL}/uploads/fixed/title.webp`,
+                path: `${process.env.VITE_BACKEND_URL}/uploads/fixed/title.webp`,
                 cid: "tt"
             }
         ]
